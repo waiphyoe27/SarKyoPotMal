@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dalae | Track Your Message</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body class="font-[Poppins]">
+    <!-- Track Section -->
+    <section class="hero-section">
+      <div class="hero-content fade-up">
+        <img src="B-PRIMARY.png" alt="Dalae Logo" class="logo" />
+        <h1 class="hero-title">Track Your Message</h1>
+        <p>Enter your 6-digit code to view your surprise message.</p>
+
+        <div class="newsletter-form">
+          <input
+            type="text"
+            id="codeInput"
+            placeholder="6-digit Code"
+            maxlength="6"
+          />
+          <button id="trackBtn" class="btn btn-primary">Track</button>
+        </div>
+
+        <div id="result" class="result-box" style="margin-top: 24px"></div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,295 @@
+/* === Base Styles === */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #E4DFD2;
+  color: #191919;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 16px;
+}
+
+/* === Hero Section === */
+.hero-section {
+  background: linear-gradient(135deg, #f5e9db, #e0d7c3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+  transition: background 1s ease;
+}
+
+.logo {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.hero-buttons {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* === Form and Buttons === */
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #D6A273;
+  color: #E4DFD2;
+}
+
+.btn-primary:hover {
+  background-color: #b67a4e;
+}
+
+.btn-outline {
+  border: 2px solid #D6A273;
+  color: #D6A273;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: #f1e4d4;
+}
+
+/* === About Section === */
+.about-section {
+  background: linear-gradient(135deg, #E4DFD2, #D6A273);
+}
+
+/* === What We Do Section === */
+.what-section {
+  background: linear-gradient(135deg, #f0ece5, #6D746D);
+}
+
+/* === Collection Section === */
+.collection-section {
+  background: linear-gradient(135deg, #D6A273, #5B5343);
+}
+
+/* === Locations Section === */
+.locations-section {
+  background: linear-gradient(135deg, #E4DFD2, #bdc1b5);
+}
+
+/* === Shop Section === */
+.shop-section {
+  background: linear-gradient(135deg, #D6A273, #191919);
+  color: #E4DFD2;
+}
+
+/* === Community Section === */
+.community-section {
+  background: linear-gradient(135deg, #E4DFD2, #6D746D);
+}
+
+/* === Newsletter Section === */
+.newsletter-section {
+  background: linear-gradient(135deg, #D6A273, #E4DFD2);
+}
+
+/* === Inside Section === */
+.inside-section {
+  background: linear-gradient(135deg, #F0E5E1, #5B5343);
+}
+
+/* === Collection Grid === */
+.collection-grid,
+.pillars,
+.shop-channels,
+.footer-columns {
+  display: grid;
+  gap: 20px;
+}
+
+.collection-grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: 20px;
+}
+
+.item {
+  background: #E4DFD2;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* === Newsletter Form === */
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.newsletter-form input,
+.newsletter-form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+.newsletter-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* === Footer === */
+.footer {
+  background-color: #191919;
+  color: #E4DFD2;
+  padding: 40px 20px;
+}
+
+.footer-columns {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.footer-columns h4 {
+  margin-bottom: 8px;
+}
+
+/* === Utilities === */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === Photos === */
+.photo-carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  height: 60vh;
+  min-height: 400px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.inside-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.inside-photo.active {
+  opacity: 1;
+}
+
+/* === Fade-up Animation === */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dismiss-btn {
+  background: transparent;
+  border: none;
+  color: #aaa;
+  font-size: 22px;
+  font-weight: bold;
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.dismiss-btn:hover {
+  color: #D6A273; /* Matches your brand color */
+}
+
+.message-card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 20px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  color: #191919;
+  animation: pop-in 0.4s ease;
+}
+
+@keyframes pop-in {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.message-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(228, 223, 210, 0.85); /* subtle Dalae overlay tone */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  padding: 20px;
+  animation: fadeOverlay 0.3s ease;
+}
+
+@keyframes fadeOverlay {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

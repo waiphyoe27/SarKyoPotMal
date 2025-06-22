@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dalae | A Gift With Meaning</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body class="font-[Poppins]">
+    <!-- 1. Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content fade-up">
+        <img src="B-PRIMARY.png" alt="Dalae Logo" class="logo" />
+        <h1 class="hero-title">A Gift With Meaning</h1>
+        <h2>စာကြိုပို့မယ်</h2>
+        <p>Plan a surprise message. We’ll help you deliver it meaningfully.</p>
+        <form id="scheduleForm" class="newsletter-form">
+          <input type="text" id="phone" placeholder="Phone Number" required />
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <input type="datetime-local" id="scheduleTime" required />
+          <button type="submit" class="btn btn-primary">Schedule Now</button>
+        </form>
+        <p style="margin-top: 16px">
+          Want to check your message status?
+          <a href="track.html">Click here to track it</a>.
+        </p>
+        <div id="scheduleResponse" style="margin-top: 10px"></div>
+      </div>
+    </section>
+
+    <!-- 10. Footer -->
+  </body>
+</html>
