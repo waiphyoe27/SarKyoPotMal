@@ -1,14 +1,11 @@
-"scripts": {
-  "start": "node index.js"
-}
 {
   "name": "nodejs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.mjs",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.mjs"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
